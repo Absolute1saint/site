@@ -1,218 +1,57 @@
-<!DOCTYPE html>
-<html lang="ua">
-<head>
-<title>Page Title</title>
-<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Mini Calendar / Date Picker</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-    box-sizing: border-box;
-}
-
-/* Стиль тіла  сторінки*/
-body {
-    font-family: Arial;
-    margin: 0;
-}
-
-/* Заголовок/Логотип/Назва */
-.header {
-    padding: 80px;
-    text-align: center;
-    background: 	#008000;
-    color: white;
-}
-
-/* Збільшіть розмір шрифту заголовка */
-.header h1 {
-    font-size: 40px;
-}
-
-/* Стилізуйте верхню панель навігації */
-.navbar {
-    overflow: hidden;
-    background-color: 	#808000;
-}
-/* Стилізуйет посилання на панелі навігації */
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-/* Посилання, вирівняне по правому краю */
-.navbar a.right {
-    float: right;
-}
-
-/* Змінити колір при наведенні курсора */
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Колонний контейнер */
-.row {  
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-}
-
-/* Створіть два нерівних стовпці, які сидять один біля одного */
-/* Бічна панель/ліва колонка */
-.side {
-    -ms-flex: 30%; /* IE10 */
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-/* Основна колонка */
-.main {   
-    -ms-flex: 70%; /* IE10 */
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-}
-
-/* Фальшиве зображення, тільки для цього прикладу */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
-
-/* Нижній колонтитул */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-}
-
-/* Адаптивний макет – коли ширина екрана менше 700 пікселів, накладіть два стовпці один на одного, а не поруч. */
-@media screen and (max-width: 700px) {
-    .row {   
-        flex-direction: column;
-    }
-}
-
-/* Адаптивний макет – коли екран має ширину менше 400 пікселів, накладайте навігаційні посилання один на одного, а не поруч. */
-@media screen and (max-width: 400px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-    }
-}
-</style>
-</head>
+<html lang="uk">  
+    <head> 
+<style type="style.css">
+      @import url("style.css")
+    </style>
+       <link rel="stylesheet" type="text/css" href="style.css">
+       <title> Шкільна бібліотека </title>  
+	  <meta charset="ANSI"> 
+          <meta charset="utf-8">
+          <title>Електронний годинник</title>
+          <script script src="./time.js"></script> 
+    </head>
 <body>
+<header>
+<h1> Електронна бібліотека школи </h1>
+<h2> «Бібліотека – це той храм, де завжди народжується і зберігається духовність. Пам’ятаймо, що у давнину бібліотеку називали «дім життя», «притулок мудрості», «аптека для душі» </h2>
+</header>
+<nav>
+<ul> 
+            <li><a href="test.html">Головна сторінка</a></li> 
+            <li><a href="info.html">Про нас</a></li>
+            <li><a href="galery.html">Фотоальбом</a></li>
+            <li><a href="form.html">Контакти</a></li>
+            <li><a href="anketa.html">Анкета</a></li>
+          </ul>
 
-<div class="header">
-  <h1> Мій веб-сайт </h1>
-  <p> Сайт, створений мною.</p>
+<input type="button" value="Авторизація" class="button">
+  <div id="clock"></div>
+
+<button onclick="alert('Привіт! Так JS також працює')">Клікни на мене</button>
+    <button onmouseover="alert('І це також працює')">Наведи на мене курсор</button>
+
+  
+</nav>
+<p><h1><i>...Книга - саме цікаве чудо! Вона зроблена з простого паперу. Ви берете книгу. На білих сторінках надруковані якісь значки, крапки - гачочки, штучки - закарлючки. Очі ваші дивляться на таємничі знаки, дивляться на букви. Дивляться - і раптом починається дивовижне чародійство! Перед вами оживають різні пригоди. Люди, не знайомі вам до цього часу, кличуть вас туди, де вам ніколи не приходилось бувати... Нема на світі чуда, дивнішого ніж книга."</i></h1></p> 
+<p><i> Ю. Дружков</i></p>
+<p><i> ТИ ПРИЙШОВ ДО БІБЛІОТЕКИ! Пам`ятай, що ти можеш відкрити незвичайні таємниці планет, зірок, космосу, зможеш розгадати складні загадки природи, якщо будеш читати. Тих книг, що є в тебе вдома напевно, не хватить. де ж взяти їх стільки, самих різних і цікавих? Звичайно, в бібліотеці!</i></p> 
+ <p><b>В нашій бібліотеці можна: </b></p>
+<ul> 
+
+
+<div class="sl_ctr">
+<div class="sldr">  
+<img src="1.png" alt="">
+<img src="2.png" alt="">
+<img src="3.png" alt="">
+<img src="4.png" alt="">
 </div>
-
-<div class="navbar">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#" class="right">Link</a>
+<div class="prv_b"></div>
+<div class="nxt_b"></div>
 </div>
-<div class="row">
-  <div class="side">
-      <h2>Про мене</h2>
-      <img src="picture.jpg">
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p> Я</p>
-      <h3> Я Назар мені 13 наразі у мюнхені</h3>
-      <p>Опис тексту до зображень.</p>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <div class="fakeimg" style="height:60px;">Image</div>
-  </div>
-  <div class="main">
-      <h2>Назва Заголовка </h2>
-      <h5> Опис заголовка, Листопад 15, 2023</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>текст.</p>
-      <p>текст
-<img src="picture.jpg">
- <section class="container">
-    <div class="cal">
-      <table class="cal-table">
-        <caption class="cal-caption">
-          <a href="index.html" class="prev">&laquo;</a>
-          <a href="index.html" class="next">&raquo;</a>
-          May 2012
-        </caption>
-        <tbody class="cal-body">
-          <tr>
-            <td class="cal-off"><a href="index.html">30</a></td>
-            <td><a href="index.html">1</a></td>
-            <td><a href="index.html">2</a></td>
-            <td class="cal-today"><a href="index.html">3</a></td>
-            <td><a href="index.html">4</a></td>
-            <td><a href="index.html">5</a></td>
-            <td><a href="index.html">6</a></td>
-          </tr>
-          <tr>
-            <td><a href="index.html">7</a></td>
-            <td class="cal-selected"><a href="index.html">8</a></td>
-            <td><a href="index.html">9</a></td>
-            <td><a href="index.html">10</a></td>
-            <td><a href="index.html">11</a></td>
-            <td class="cal-check"><a href="index.html">12</a></td>
-            <td><a href="index.html">13</a></td>
-          </tr>
-          <tr>
-            <td><a href="index.html">14</a></td>
-            <td><a href="index.html">15</a></td>
-            <td><a href="index.html">16</a></td>
-            <td class="cal-check"><a href="index.html">17</a></td>
-            <td><a href="index.html">18</a></td>
-            <td><a href="index.html">19</a></td>
-            <td><a href="index.html">20</a></td>
-          </tr>
-          <tr>
-            <td><a href="index.html">21</a></td>
-            <td><a href="index.html">22</a></td>
-            <td><a href="index.html">23</a></td>
-            <td><a href="index.html">24</a></td>
-            <td><a href="index.html">25</a></td>
-            <td><a href="index.html">26</a></td>
-            <td><a href="index.html">27</a></td>
-          </tr>
-          <tr>
-            <td><a href="index.html">28</a></td>
-            <td><a href="index.html">29</a></td>
-            <td><a href="index.html">30</a></td>
-            <td><a href="index.html">31</a></td>
-            <td class="cal-off"><a href="index.html">1</a></td>
-            <td class="cal-off"><a href="index.html">2</a></td>
-            <td class="cal-off"><a href="index.html">3</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="about">
-    <p class="about-links">
-      <a href="http://www.cssflow.com/snippets/mini-calendar-date-picker" target="_parent">View Article</a>
-      <a href="http://www.cssflow.com/snippets/mini-calendar-date-picker.zip" target="_parent">Download</a>
-    </p>
-    <p class="about-author">
-      &copy; 2023&ndash;2013 <a href="http://thibaut.me" target="_blank">Thibaut Courouble</a> -
-      <a href="http://www.cssflow.com/mit-license" target="_blank">MIT License</a><br>
-      Original PSD by <a href="http://dribbble.com/shots/240129-Calender" target="_blank">James McDonald</a>
+         </ul>
+</body> 
+</html>James McDonald</a>
     </p>
   </section>
 
