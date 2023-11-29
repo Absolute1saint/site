@@ -23,7 +23,7 @@
             <li><a href="form.html">Контакти</a></li>
             <li><a href="anketa.html">Анкета</a></li>
           </ul>
-
+<p>absatz</p>
 <input type="button" value="Авторизація" class="button">
   <div id="clock"></div>
 
